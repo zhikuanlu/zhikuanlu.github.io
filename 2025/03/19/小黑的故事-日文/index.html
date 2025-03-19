@@ -22,7 +22,7 @@
 
   
 
-  <title>110年度校犬比賽 NTVS 新北高工 - 嘎逼 | 網頁標題</title>
+  <title>小黑的故事 (日文) | 網頁標題</title>
 
   
 
@@ -93,16 +93,18 @@
     <div class="header-content">
       <div class="post-text layout-block">
         <div class="layout-margin">
-          <h1 class="title-wrap">110年度校犬比賽 NTVS 新北高工 - 嘎逼</h1>
+          <h1 class="title-wrap">小黑的故事 (日文)</h1>
           <h2 class="title-sub-wrap">
             <span>發布於</span>
-            <time  class="article-date" datetime="2025-03-18T12:14:42.000Z" itemprop="datePublished">2025-03-18</time>
+            <time  class="article-date" datetime="2025-03-19T15:27:09.000Z" itemprop="datePublished">2025-03-19</time>
           </h2>
           
           <ul class="wrap-list dark">
   
 </ul>
           <ul class="wrap-list dark">
+  
+    <li><a href="../../../../tags/%E9%9F%B3%E8%A8%8A%E8%A7%A3%E8%AA%AA/">🏷️ 音訊解說</a></li>
   
 </ul>
         </div>
@@ -126,9 +128,7 @@
       
       
       <section class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
-        <h1 id="110年度校犬比賽-NTVS-新北高工-嘎逼"><a href="#110年度校犬比賽-NTVS-新北高工-嘎逼" class="headerlink" title="110年度校犬比賽 NTVS 新北高工 - 嘎逼"></a>110年度校犬比賽 NTVS 新北高工 - 嘎逼</h1><video autoplay controls autoplay muted class="video">
-    <source src="/video/110校犬/110年度校犬比賽NTVS新北高工-嘎逼.webm" type="video/webm">
-</video>
+        <h1 id="小黑的故事日文音訊解說"><a href="#小黑的故事日文音訊解說" class="headerlink" title="小黑的故事日文音訊解說"></a>小黑的故事日文音訊解說</h1><div class="aplayer-box" data-url='/audio/小黑的故事/新北高工(日文)聲.mp4' data-name='小黑的故事-日文解說' data-artist='新北高工' data-cover='img/background.jpg' ></div>
       </section>
 
       
@@ -140,8 +140,8 @@
     
     <div class="card-text">
       
-        <a href="../../19/%E5%B0%8F%E9%BB%91%E7%9A%84%E6%95%85%E4%BA%8B-%E4%B8%AD%E6%96%87/" itemprop="url">
-          <h2 class="card-text--title text-ellipsis">小黑的故事 (中文)</h2>
+        <a href="../%E5%B0%8F%E9%BB%91%E7%9A%84%E6%95%85%E4%BA%8B-%E8%8B%B1%E6%96%87/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">小黑的故事 (英文)</h2>
         </a>
       
       <div class="card-text--row">下一篇</div>
@@ -155,8 +155,8 @@
     
     <div class="card-text">
       
-        <a href="../109%E5%B9%B4%E5%BA%A6%E6%A0%A1%E7%8A%AC%E6%AF%94%E8%B3%BD-NTVS-%E6%96%B0%E5%8C%97%E9%AB%98%E5%B7%A5-%E5%98%8E%E9%80%BC/" itemprop="url">
-          <h2 class="card-text--title text-ellipsis">109年度校犬比賽 NTVS 新北高工 - 嘎逼</h2>
+        <a href="../%E5%B0%8F%E9%BB%91%E7%9A%84%E6%95%85%E4%BA%8B-%E4%B8%AD%E6%96%87/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">小黑的故事 (中文)</h2>
         </a>
       
       <div class="card-text--row">上一篇</div>
@@ -275,6 +275,34 @@
 
   
   <!-- aplayer -->
+
+
+  <!-- aplayer 音频 start -->
+  <link rel="stylesheet" href="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.css">
+  <script type="text/javascript" src="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.js"></script>
+  <script type="text/javascript">
+    const aplayer = document.querySelectorAll(".aplayer-box");
+    aplayer && initaplayer(aplayer);
+    function initaplayer(els) {
+      let elsArr = Array.from(els);
+      elsArr.forEach(el => {
+        let params = {
+          container: el,
+          audio: { ...el.dataset },
+          theme: "#b7daff",
+          autoplay: false,
+          loop: false,
+          mutex: true,
+        }
+        if (el.dataset.lrc) {
+          params['lrcType'] = 3
+        }
+        new APlayer(params);
+      });
+    }
+  </script>
+  <!-- aplayer 音频 end -->
+  
 
 
 <!-- dplayer -->
